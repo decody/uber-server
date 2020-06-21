@@ -1,0 +1,29 @@
+{
+  "name": "uber-server",
+  "version": "1.0.0",
+  "description": "Server for the Uber Clone course from Nomad Coder. GraphQL, Typescript, NodeJS",
+  "main": "index.js",
+  "repository": "git@github.com:decody/uber-server.git",
+  "author": "Chris <gichulroh@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/cors": "^2.8.6",
+    "@types/helmet": "^0.0.47",
+    "@types/morgan": "^1.9.1",
+    "nodemon": "^2.0.4",
+    "ts-node": "^8.10.2",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.9.5"
+  },
+  "scripts": {
+    "dev": "cd src && nodemon --exec ts-node index.ts -e ts,graphql"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "graphql-tools": "^6.0.10",
+    "graphql-yoga": "^1.18.3",
+    "helmet": "^3.23.1",
+    "merge-graphql-schemas": "^1.7.8",
+    "morgan": "^1.10.0"
+  }
+}
