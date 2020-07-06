@@ -17,7 +17,7 @@ class App {
         this.app.express.use(cors());
         this.app.express.use(logger("dev"));
         this.app.express.use(helmet());
-    }
+    };
 }
 
 export default new App().app;
