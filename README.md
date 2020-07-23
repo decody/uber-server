@@ -53,3 +53,20 @@ yarn add @types/helmet @types/morgan @types/cors
 yarn add graphql-tools merge-graphql-schemas
 ```
 api 폴더 내의 *.graphql과 *.resolvers.*을 path 모듈을 이용하여 모든 schema를 가져옴
+
+graphql의 쿼리는 `localhost:8000/playground`에서 확인가능
+
+
+graphql-to-typescript와 gql-merge 패키지 dev로 설치
+```hash
+yarn add graphql-to-typescript add gql-merge --dev
+```
+types 폴더 생성
+d.ts 파일은 타입스크립트가 type 정의 파일이라고 인식함. d는 definition
+
+```hash
+yarn add babel-runtime --dev
+```
+
+모든 graphql 파일을 받아서 하나로 합치고 그 graphql 파일을 typescript로 바꿈
+타입스크립트의 리턴값과 graphql의 리턴값을 동기화할 수 있다.
